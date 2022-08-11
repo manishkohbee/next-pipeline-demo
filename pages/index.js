@@ -1,5 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
+import CountdownTimer from "../components/countdown_timer";
+import FaqSection from "../components/faq";
+
 export default function Home() {
   return (
     <>
@@ -35,7 +38,7 @@ export default function Home() {
 
       </section>
 
-      {/* feature  */}
+      {/* feature */}
       <section className="pb-20">
         <div className="container mx-auto px-4 text-center">
           <h3 className="mb-10 text-2xl font-heading">Trusted by brands all over the world</h3>
@@ -72,70 +75,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* faq */}
+      {/* how it works */}
       <section>
+        <div className="skew skew-top mr-for-radius">
+          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+            <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
+          </svg>
+        </div>
+        <div className="skew skew-top ml-for-radius">
+          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+            <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+          </svg>
+        </div>
         <div className="py-20 bg-gray-50 radius-for-skewed">
           <div className="container mx-auto px-4">
-            <div className="mb-16 max-w-xl mx-auto text-center text-5xl font-bold font-heading">
-              <h2 className="">Frequently Asked Questions</h2>
+            <div className="mb-16 max-w-md text-center mx-auto">
+              <h2 className="text-4xl lg:text-5xl font-bold font-heading">Build &amp; Launch without problems</h2>
             </div>
-            <div className="max-w-3xl mx-auto">
-              <ul className="space-y-4 lg:space-y-6">
-                <li className="p-6 bg-gray-50 rounded shadow">
-                  <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
-                    <span className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
-                    <svg className="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-                    </svg>
-                  </button>
-                  <p className="mt-4 text-gray-400 font-normal leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod orci sed tristique placerat. Fusce in ligula urna. Fusce eget nunc et libero accumsan rutrum quis nec lectus. Quisque luctus sem nibh, quis ornare neque consectetur varius. Maecenas rhoncus consectetur rutrum.</p>
-                </li>
-                <li className="p-6 bg-gray-50 rounded shadow">
-                  <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
-                    <span className="text-xl">Nunc maximus odio sit amet eros faucibus?</span>
-                    <svg className="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                  </button>
-                  <p className="hidden mt-4 text-gray-400 font-normal leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
-                </li>
-                <li className="p-6 bg-gray-50 rounded shadow">
-                  <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
-                    <span className="text-xl">Nam feugiat ex eget sapien lobortis?</span>
-                    <svg className="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                  </button>
-                  <p className="hidden mt-4 text-gray-400 font-normal leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
-                </li>
-                <li className="p-6 bg-gray-50 rounded shadow">
-                  <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
-                    <span className="text-xl">In hac habitasse platea dictumst?</span>
-                    <svg className="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                  </button>
-                  <p className="hidden mt-4 text-gray-400 font-normal leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
-                </li>
-                <li className="p-6 bg-gray-50 rounded shadow">
-                  <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
-                    <span className="text-xl">Nullam congue lacinia nibh quis scelerisque?</span>
-                    <svg className="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                  </button>
-                  <p className="hidden mt-4 text-gray-400 font-normal leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
-                </li>
-                <li className="p-6 bg-gray-50 rounded shadow">
-                  <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600">
-                    <span className="text-xl">Nam feugiat ex eget sapien lobortis?</span>
-                    <svg className="w-4 h-4 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                    </svg>
-                  </button>
-                  <p className="hidden mt-4 text-gray-400 font-normal leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis ultricies est. Duis nec hendrerit magna. Ut vel orci gravida, hendrerit enim non, gravida turpis. Praesent non lectus porttitor, scelerisque nulla nec, ornare neque. Integer massa libero, ornare ut leo nec, scelerisque rutrum elit. Morbi et massa id ipsum lobortis rhoncus. Aenean sit amet porta nulla, quis varius risus. Suspendisse ultrices ut lectus non laoreet. Etiam ornare laoreet tortor quis porttitor. Suspendisse tempus erat non dui volutpat eleifend.</p>
-                </li>
-              </ul>
+            <div className="relative flex flex-wrap -mx-4 z-0">
+              <div className="hidden lg:block absolute inset-x-0 max-w-2xl xl:max-w-3xl mx-auto py-px rounded bg-green-600" style={{ top: 10 + '%', zIndex: -1 }}></div>
+              <div className="mb-8 w-full lg:w-1/3 px-4 text-center">
+                <span className="relative mb-6 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center bg-green-600 rounded-full text-white text-2xl">1</span>
+                <h3 className="mb-4 text-2xl font-bold font-heading">Lorem ipsum dolor sit amet consectutar</h3>
+                <p className="text-gray-500 leading-loose">Fusce quam tellus, placerat eu metus ut, viverra aliquet purus. Suspendisse potenti. Nulla non nibh feugiat.</p>
+              </div>
+              <div className="mb-8 w-full lg:w-1/3 px-4 text-center">
+                <span className="mb-4 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center bg-green-600 rounded-full text-white text-2xl">2</span>
+                <h3 className="mb-4 text-2xl font-bold font-heading">Lorem ipsum dolor sit amet consectutar</h3>
+                <p className="text-gray-500 leading-loose">Fusce quam tellus, placerat eu metus ut, viverra aliquet purus. Suspendisse potenti. Nulla non nibh feugiat.</p>
+              </div>
+              <div className="w-full lg:w-1/3 px-4 text-center">
+                <span className="mb-4 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center bg-green-600 rounded-full text-white text-2xl">3</span>
+                <h3 className="mb-4 text-2xl font-bold font-heading">Lorem ipsum dolor sit amet consectutar</h3>
+                <p className="text-gray-500 leading-loose">Fusce quam tellus, placerat eu metus ut, viverra aliquet purus. Suspendisse potenti. Nulla non nibh feugiat.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -151,6 +124,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* counter */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap text-center">
+            <div className="mb-8 w-full md:w-1/2 lg:w-1/4">
+              <h4 className="mb-2 text-gray-500">Total Revenue</h4>
+              <span className="text-3xl lg:text-4xl font-bold">$33,261</span>
+            </div>
+            <div className="mb-8 w-full md:w-1/2 lg:w-1/4">
+              <h4 className="mb-2 text-gray-500">Subscribers</h4>
+              <span className="text-3xl lg:text-4xl font-bold">481,095</span>
+            </div>
+            <div className="mb-8 w-full md:w-1/2 lg:w-1/4">
+              <h4 className="mb-2 text-gray-500">Conversations</h4>
+              <span className="text-3xl lg:text-4xl font-bold">643,533</span>
+            </div>
+            <div className="mb-8 w-full md:w-1/2 lg:w-1/4">
+              <h4 className="mb-2 text-gray-500">Modal Sale Rate</h4>
+              <span className="text-3xl lg:text-4xl font-bold">25%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* about us */}
       <section>
         <div className="skew skew-top mr-for-radius">
           <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
@@ -159,6 +157,62 @@ export default function Home() {
         </div>
         <div className="skew skew-top ml-for-radius">
           <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+            <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+          </svg>
+        </div>
+        <div className="py-20 bg-gray-50 radius-for-skewed">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="mb-8 p-6 flex flex-wrap items-center bg-white rounded-lg shadow">
+                <div className="w-full lg:w-1/3">
+                  <img className="mb-5 lg:mb-0 w-full rounded-lg object-cover" style={{ maxHeight: 350 + "px" }} src="https://images.unsplash.com/photo-1484588168347-9d835bb09939?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=334&amp;q=80" alt="" />
+                </div>
+                <div className="w-full lg:w-2/3">
+                  <div className="max-w-lg mx-auto">
+                    <p className="mb-8 text-2xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et placerat metus. Morbi aliquet felis sit amet erat finibus, ac condimentum ligula ornare.</p>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="text-2xl font-bold font-heading">Alice Bradley</h4>
+                        <p className="text-blueGrey-500">Backend Developer</p>
+                      </div>
+                      <a href="#">
+                        <img className="h-6" src="atis-assets/social/facebook-name.png" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="max-w-md mx-auto text-center">
+                <button className="mr-1 bg-gray-200 rounded-full p-1"></button>
+                <button className="mr-1 bg-green-600 rounded-full p-1"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="skew skew-bottom mr-for-radius">
+          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+            <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+          </svg>
+        </div>
+        <div className="skew skew-bottom ml-for-radius">
+          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+            <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
+          </svg>
+        </div>
+      </section>
+
+      {/* faq */}
+      <FaqSection></FaqSection>
+
+      {/* Testimonials */}
+      <section>
+        <div className="skew skew-top mr-for-radius">
+          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-700" viewBox="0 0 10 10" preserveAspectRatio="none">
+            <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
+          </svg>
+        </div>
+        <div className="skew skew-top ml-for-radius">
+          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-600" viewBox="0 0 10 10" preserveAspectRatio="none">
             <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
           </svg>
         </div>
@@ -240,11 +294,13 @@ export default function Home() {
       {/* footer */}
       <div className="fixed bottom-0 left-0 bg-blue-200 w-screen">
         <div className="flex items-center h-20 justify-between px-4">
-          <div>Offer Closes Soon</div>
+          <div>
+            Offer Closes Soon
+            <CountdownTimer></CountdownTimer>
+          </div>
           <div><a className="inline-block py-2 px-6 bg-green-600 text-white font-semibold rounded" href="#">Register</a></div>
         </div>
       </div>
-
 
     </>
   )
