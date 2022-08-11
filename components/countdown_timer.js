@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 function CountdownTimer() {
+
     const calculateTimeLeft = () => {
         const difference = +new Date("2022-08-15T00:00:00+05:30") - +new Date();
         let timeLeft = {};
@@ -18,6 +19,7 @@ function CountdownTimer() {
     };
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
         setTimeout(() => {
@@ -25,10 +27,14 @@ function CountdownTimer() {
         }, 1000);
     });
 
+    useEffect(() => setMounted(true), [])
+
+    if (!mounted) return null
+
     return (
         <div >
-            <span>
-                Offer Closes Soon:
+            Offer Closes Soon:&nbsp;
+            <span className="font-bold">
                 <span>{timeLeft.hours < 10 ? "0" + timeLeft.hours : timeLeft.hours}</span>
                 <span>:</span>
                 <span>{timeLeft.minutes < 10 ? "0" + timeLeft.minutes : timeLeft.minutes}</span>
