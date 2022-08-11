@@ -28,6 +28,7 @@ function CountdownTimer() {
     return (
         <div >
             <span>
+                Offer Closes Soon:
                 <span>{timeLeft.hours < 10 ? "0" + timeLeft.hours : timeLeft.hours}</span>
                 <span>:</span>
                 <span>{timeLeft.minutes < 10 ? "0" + timeLeft.minutes : timeLeft.minutes}</span>

@@ -77,16 +77,6 @@ export default function Home() {
 
       {/* how it works */}
       <section>
-        <div className="skew skew-top mr-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
-          </svg>
-        </div>
-        <div className="skew skew-top ml-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
-          </svg>
-        </div>
         <div className="py-20 bg-gray-50 radius-for-skewed">
           <div className="container mx-auto px-4">
             <div className="mb-16 max-w-md text-center mx-auto">
@@ -111,16 +101,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="skew skew-bottom mr-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
-          </svg>
-        </div>
-        <div className="skew skew-bottom ml-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
-          </svg>
         </div>
       </section>
 
@@ -150,16 +130,6 @@ export default function Home() {
 
       {/* about us */}
       <section>
-        <div className="skew skew-top mr-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
-          </svg>
-        </div>
-        <div className="skew skew-top ml-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
-          </svg>
-        </div>
         <div className="py-20 bg-gray-50 radius-for-skewed">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
@@ -189,16 +159,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="skew skew-bottom mr-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
-          </svg>
-        </div>
-        <div className="skew skew-bottom ml-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
-          </svg>
-        </div>
       </section>
 
       {/* faq */}
@@ -206,16 +166,6 @@ export default function Home() {
 
       {/* Testimonials */}
       <section>
-        <div className="skew skew-top mr-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-700" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
-          </svg>
-        </div>
-        <div className="skew skew-top ml-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-600" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
-          </svg>
-        </div>
         <div className="py-20 bg-gray-50 radius-for-skewed overflow-hidden">
           <div className="max-w-6xl mx-auto px-4 pb-6 lg:pb-16">
             <div className="flex flex-wrap justify-center lg:justify-between items-center text-center lg:text-left">
@@ -279,29 +229,36 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="skew skew-bottom mr-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
-          </svg>
-        </div>
-        <div className="skew skew-bottom ml-for-radius">
-          <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
-            <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
-          </svg>
-        </div>
       </section>
 
       {/* footer */}
       <div className="fixed bottom-0 left-0 bg-blue-200 w-screen">
         <div className="flex items-center h-20 justify-between px-4">
+
           <div>
-            Offer Closes Soon
+            FREE <s>र 999</s>
             <CountdownTimer></CountdownTimer>
           </div>
           <div><a className="inline-block py-2 px-6 bg-green-600 text-white font-semibold rounded" href="#">Register</a></div>
         </div>
       </div>
 
+    </>
+  )
+}
+
+function Stripes() {
+  return (
+    <>
+      <div className="skew skew-bottom mr-for-radius">
+        <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+          <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+        </svg>
+      </div><div className="skew skew-bottom ml-for-radius">
+        <svg className="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+          <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
+        </svg>
+      </div>
     </>
   )
 }
