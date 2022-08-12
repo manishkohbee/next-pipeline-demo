@@ -10,8 +10,24 @@ export default function Register() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        alert(`${name} ${email} ${phone}`)
-        setIsSubmitted(true)
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                "id": "5",
+                "eventId": "5",
+                "userName": "Yo Mama",
+                "email": "yomama@gmail.com",
+                "whatsappNumber": "9535964615"
+            })
+        };
+        fetch('https://asia-east2-kohbeeweb.cloudfunctions.net/kohbeeController/saveRegistration', requestOptions)
+            .then(response => response.json())
+            .then(data => this.setState({ postId: data.id }))
+            .then(() => {
+                setIsSubmitted(true)
+            })
+
     }
 
 
