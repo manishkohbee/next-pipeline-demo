@@ -55,7 +55,7 @@ export default function FaqSection() {
 
     return (
         <section>
-            <div className="pb-20 bg-gray-50 radius-for-skewed">
+            <div className="pb-20 radius-for-skewed">
                 <div className="container mx-auto px-4">
                     <div className="mb-16 max-w-xl mx-auto text-center text-4xl font-bold font-heading">
                         <h2 className="">Frequently Asked Questions</h2>
@@ -64,12 +64,12 @@ export default function FaqSection() {
                         <ul className="space-y-4 lg:space-y-6">
 
                             {faqList.map((value, index) => (
-                                <li key={index} className="p-6 bg-gray-50 rounded shadow">
-                                    <button className="w-full flex justify-between items-center text-left font-bold font-heading hover:text-gray-600" onClick={() => updateFaqList(index)}>
+                                <li key={index} className="p-6 rounded shadow">
+                                    <button className="w-full flex justify-between items-center text-left font-bold font-heading " onClick={() => updateFaqList(index)}>
                                         <span className="text-xl">{value.question}</span>
                                         <ExpandedIcon isOpen={value.isOpen} />
                                     </button>
-                                    <p className={`${value.isOpen ? "" : "hidden"} mt-4 text-gray-400 font-normal leading-loose`}> {value.answer} </p>
+                                    <p className={`${value.isOpen ? "" : "hidden"} mt-4 font-normal leading-loose`}> {value.answer} </p>
                                 </li>
                             ))}
                         </ul>

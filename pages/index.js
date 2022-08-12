@@ -4,16 +4,23 @@ import CountdownTimer from "../components/countdown_timer";
 import FaqSection from "../components/faq";
 
 export default function Home() {
+
   return (
     <>
       {/* main  */}
-      <section className="relative py-20">
+      <section className="relative pb-20 pt-10">
         <div className="relative container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-6">
             <h2 className="mb-5 text-3xl font-bold">Are you ready to make your First ₹50,000 online?</h2>
             <h4 className="mb-5 text-xl ">If your answer is Maybe, I will give you <u><b> Over ₹42,745 Worth of Step-By-Step</b> </u> Monetization Secrets For <u><b>FREE</b></u> So You Can Finally launch that workshop or course and earn from your community.</h4>
             <h2 className="mb-1 text-2xl font-bold">Launch in just 7 days with a Step By Step Masterplan.</h2>
           </div>
+        </div>
+
+        <div className="flex justify-center">
+          <Link href="/register">
+            <div className="my-4 py-2 px-6 rounded bg-primary text-white font-bold leading-loose transition duration-200">REGISTER NOW</div>
+          </Link>
         </div>
 
         <div className="max-w-2xl mx-auto p-4">
@@ -88,23 +95,23 @@ export default function Home() {
 
             <ul>
               <li className="flex mb-8 items-center">
-                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary rounded-full text-gray-50 font-semibold font-heading">1</span>
+                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary text-black rounded-full font-semibold font-heading">1</span>
                 <h3 className="text-xl">It doesn&apos;t matter if you&apos;ve never made a <b>SINGLE RUPEE</b> online yet</h3>
               </li>
               <li className="flex mb-8 items-center">
-                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary rounded-full text-gray-50 font-semibold font-heading">2</span>
+                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary text-black rounded-full font-semibold font-heading">2</span>
                 <h3 className="text-xl">It doesn&apos;t matter if you do not have a mailing list or contact information of your audience on social media</h3>
               </li>
               <li className="flex mb-8 items-center">
-                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary rounded-full text-gray-50 font-semibold font-heading">3</span>
+                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary text-black rounded-full font-semibold font-heading">3</span>
                 <h3 className="text-xl">It doesn&apos;t matter if you&apos;re not sure “what” you want to sell (this is in fact a good thing, you&apos;ll see why)</h3>
               </li>
               <li className="flex mb-8 items-center">
-                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary rounded-full text-gray-50 font-semibold font-heading">4</span>
+                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary text-black rounded-full font-semibold font-heading">4</span>
                 <h3 className="text-xl">It doesn&apos;t matter if you do not have a team or lakhs of money to spend on ads, or creating content or hiring people</h3>
               </li>
               <li className="flex mb-8 items-center">
-                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary rounded-full text-gray-50 font-semibold font-heading">5</span>
+                <span className="flex-shrink-0 flex mr-4 items-center justify-center w-8 h-8 bg-secondary text-black rounded-full font-semibold font-heading">5</span>
                 <h3 className="text-xl">And it DEFINITELY doesn&apos;t matter if you are not that “tech-savvy” (as long as you can follow STEP-BY-STEP instructions to set things up)</h3>
               </li>
             </ul>
@@ -185,7 +192,7 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="pb-20">
-        <div className="bg-gray-50 radius-for-skewed overflow-hidden">
+        <div className=" radius-for-skewed overflow-hidden">
           <div className="max-w-6xl mx-auto px-4 pb-6 lg:pb-16">
             <div className="flex flex-wrap justify-center lg:justify-between items-center text-center lg:text-left">
               <div className="w-full lg:w-4/5 mb-4 lg:mb-0">
@@ -196,7 +203,7 @@ export default function Home() {
           <div className="relative flex">
             <div className="flex flex-wrap max-w-6xl px-2 mx-auto">
               <div className="mb-4 w-full lg:w-1/3 px-3">
-                <div className="p-8 bg-white rounded shadow text-center">
+                <div className="p-8  rounded shadow text-center">
                   <div className="bg-no-repeat bg-left-top">
                     <p className="mb-8 text-gray-500 leading-loose">“Kohbee” Game changer app to launch my skin & hair course!
                       Never thought it would be so easy!!! Happy learning!!
@@ -208,7 +215,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mb-4 w-full lg:w-1/3 px-3">
-                <div className="p-8 bg-white rounded shadow text-center">
+                <div className="p-8  rounded shadow text-center">
                   <div className="bg-no-repeat bg-left-top">
                     <p className="mb-8 text-gray-500 leading-loose">It&apos;s been a wonderful experience being associated with Kohbee. They [support you with] the onboarding process & take care of all the logistics thereafter so you can concentrate solely on creating.
                       A very user friendly platform makes conducting sessions very easy & importantly ensures security of your intellectual property.</p>
@@ -219,7 +226,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mb-4 w-full lg:w-1/3 px-3">
-                <div className="p-8 bg-white rounded shadow text-center">
+                <div className="p-8  rounded shadow text-center">
                   <div className="bg-no-repeat bg-left-top">
                     <p className="mb-8 text-gray-500 leading-loose">I am quite happy with the services offered by Kohbee. Especially the behaviour of almost all the contact persons. Also, the idea of putting all the effort first without getting anything in return and then gaining profit only when the creator is getting it, is quite impressive and something that should be really appreciated.</p>
                     <img className="mb-2 mx-auto w-12 h-12 rounded-full object-cover" src="assets/testimonials/testimonial3.png" alt="" />
@@ -241,7 +248,7 @@ export default function Home() {
       </section>
 
       {/* footer */}
-      <div className="fixed bottom-0 left-0 bg-black w-screen">
+      <div className="fixed bottom-0 left-0 bg-overlay w-screen">
         <div className="flex items-center h-20 justify-between px-4">
 
           <div className="text-white">
@@ -249,7 +256,7 @@ export default function Home() {
             <CountdownTimer></CountdownTimer>
           </div>
           <Link href="/register">
-            <div className="text-white py-2 px-6 font-semibold bg-primary rounded">Register</div>
+            <div className="my-4 py-2 px-6 rounded bg-primary text-white font-bold leading-loose transition duration-200">REGISTER</div>
           </Link>
         </div>
       </div>

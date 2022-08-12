@@ -9,9 +9,11 @@ module.exports = {
       colors: {
         primary: "#4DB6AC",
         secondary: "#B8F2E3",
-        darkgreen: "#1D797E",
+        darkgreen: "#B8F2E3",
         black: '#000',
         white: '#fff',
+        kohbeeblack: "#01141b",
+        overlay: "#112834"
       }
     },
 
@@ -19,4 +21,5 @@ module.exports = {
   plugins: [
     require('@tailwindcss/aspect-ratio'),
   ],
+  darkMode: 'class',
 }

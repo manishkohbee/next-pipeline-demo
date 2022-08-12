@@ -5,7 +5,7 @@ import { FB_PIXEL_ID } from '../lib/fbpixel'
 export default class MyDocument extends Document {
     render() {
         return (
-            <Html>
+            <Html className="dark">
                 <Head>
                     <noscript>
                         <img
@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
                         />
                     </noscript>
                 </Head>
-                <body>
+                <body className="dark:bg-kohbeeblack">
                     <Main />
                     <NextScript />
                 </body>

@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { useRouter } from 'next/router'
 import * as fbq from '../lib/fbpixel'
 import '../styles/globals.css'
+import { ThemeProvider } from 'next-themes'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
@@ -41,7 +42,9 @@ function MyApp({ Component, pageProps }) {
           `,
         }}
       />
-      <Component {...pageProps} />
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }
