@@ -13,7 +13,8 @@ module.exports = {
         black: '#000',
         white: '#fff',
         kohbeeblack: "#01141b",
-        overlay: "#112834"
+        overlay: "#112834",
+        overlaay: "#091e28"
       }
     },
 

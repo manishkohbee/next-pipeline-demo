@@ -64,7 +64,7 @@ export default function FaqSection() {
                         <ul className="space-y-4 lg:space-y-6">
 
                             {faqList.map((value, index) => (
-                                <li key={index} className="p-6 rounded shadow">
+                                <li key={index} className="p-6 bg-overlaay rounded shadow">
                                     <button className="w-full flex justify-between items-center text-left font-bold font-heading " onClick={() => updateFaqList(index)}>
                                         <span className="text-xl">{value.question}</span>
                                         <ExpandedIcon isOpen={value.isOpen} />

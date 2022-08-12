@@ -11,9 +11,9 @@ export default function Home() {
       <section className="relative pb-20 pt-10">
         <div className="relative container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center mb-6">
-            <h2 className="mb-5 text-3xl font-bold">Are you ready to make your First ₹50,000 online?</h2>
-            <h4 className="mb-5 text-xl ">If your answer is Maybe, I will give you <u><b> Over ₹42,745 Worth of Step-By-Step</b> </u> Monetization Secrets For <u><b>FREE</b></u> So You Can Finally launch that workshop or course and earn from your community.</h4>
-            <h2 className="mb-1 text-2xl font-bold">Launch in just 7 days with a Step By Step Masterplan.</h2>
+            <h2 className="mb-5 text-2xl font-bold text-primary">Are You Ready To Make Your First ₹50,000 Online?</h2>
+            <h4 className="mb-5 text-lg ">If Your Answer Is Maybe, I Will Give You <u><b> Over ₹42,745 Worth Of Step-By-Step</b></u> Monetization Secrets For <u><b>FREE</b></u> So You Can Finally...</h4>
+            <h2 className="mb-1 text-xl font-bold">Launch In Just 7 days With A Step By Step Masterplan.</h2>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ export default function Home() {
           <h3 className="mb-10 text-2xl font-bold font-heading">As seen on</h3>
           <div className="flex flex-wrap -mx-2">
             <div className="mb-4 w-full px-2">
-              <div className="py-8 bg-gray-50 rounded">
+              <div className="py-8 px-4 bg-gray-50 rounded">
                 <a href="#">
                   <img className="mx-auto h-8" src="https://static.toiimg.com/photo/92222747.cms" alt="" />
                 </a>
@@ -203,7 +203,7 @@ export default function Home() {
           <div className="relative flex">
             <div className="flex flex-wrap max-w-6xl px-2 mx-auto">
               <div className="mb-4 w-full lg:w-1/3 px-3">
-                <div className="p-8  rounded shadow text-center">
+                <div className="p-8 bg-overlaay rounded shadow text-center">
                   <div className="bg-no-repeat bg-left-top">
                     <p className="mb-8 text-gray-500 leading-loose">“Kohbee” Game changer app to launch my skin & hair course!
                       Never thought it would be so easy!!! Happy learning!!
@@ -215,7 +215,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mb-4 w-full lg:w-1/3 px-3">
-                <div className="p-8  rounded shadow text-center">
+                <div className="p-8 bg-overlaay rounded shadow text-center">
                   <div className="bg-no-repeat bg-left-top">
                     <p className="mb-8 text-gray-500 leading-loose">It&apos;s been a wonderful experience being associated with Kohbee. They [support you with] the onboarding process & take care of all the logistics thereafter so you can concentrate solely on creating.
                       A very user friendly platform makes conducting sessions very easy & importantly ensures security of your intellectual property.</p>
@@ -226,7 +226,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="mb-4 w-full lg:w-1/3 px-3">
-                <div className="p-8  rounded shadow text-center">
+                <div className="p-8 bg-overlaay rounded shadow text-center">
                   <div className="bg-no-repeat bg-left-top">
                     <p className="mb-8 text-gray-500 leading-loose">I am quite happy with the services offered by Kohbee. Especially the behaviour of almost all the contact persons. Also, the idea of putting all the effort first without getting anything in return and then gaining profit only when the creator is getting it, is quite impressive and something that should be really appreciated.</p>
                     <img className="mb-2 mx-auto w-12 h-12 rounded-full object-cover" src="assets/testimonials/testimonial3.png" alt="" />
@@ -240,10 +240,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="pb-48">
+      <section className="pb-48 px-4">
         <div className="max-w-2xl mx-auto font-bold text-center">
           <h2 className="text-primary text-2xl pb-4">All You Have To Do Is Say “MAYBE”</h2>
-          <h4 className="text-lg">And We&apos;ll Help You Launch All Of This… For FREE!</h4>
+          <h4 className="text-lg">And We&apos;ll Help You Launch All Of This … For FREE!</h4>
         </div>
       </section>
 
