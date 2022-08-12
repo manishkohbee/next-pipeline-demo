@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import CountdownTimer from "../components/countdown_timer";
 import FaqSection from "../components/faq";
 
@@ -262,7 +263,9 @@ export default function Home() {
             <span className="font-bold text-2xl">FREE</span> <s className="text-lg">र 999</s>
             <CountdownTimer></CountdownTimer>
           </div>
-          <div><a className="inline-block py-2 px-6 bg-primary text-white font-semibold rounded" href="/register">Register</a></div>
+          <Link href="/register">
+            <div className="text-white py-2 px-6 font-semibold bg-primary rounded">Register</div>
+          </Link>
         </div>
       </div>
 
