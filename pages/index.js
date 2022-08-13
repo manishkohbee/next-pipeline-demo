@@ -166,7 +166,7 @@ export default function Home() {
               <h2 className="text-4xl lg:text-5xl font-bold font-heading">Here&apos;s how it works</h2>
             </div>
             <div className="relative flex flex-wrap -mx-4 z-0">
-              <div className="hidden lg:block absolute inset-x-0 max-w-2xl xl:max-w-3xl mx-auto py-px rounded bg-primary" style={{ top: 10 + '%', zIndex: -1 }}></div>
+              <div className="hidden lg:block absolute inset-x-0 max-w-2xl xl:max-w-3xl mx-auto py-px rounded bg-primary" style={{ top: 10 + "%", zIndex: -1 }}></div>
               <div className="mb-8 w-full lg:w-1/3 px-4 text-center">
                 <span className="relative mb-6 lg:mb-10 mx-auto flex w-16 h-16 items-center justify-center bg-primary rounded-full text-white text-2xl">1</span>
                 <h3 className="mb-4 text-2xl font-bold font-heading">Plan, Plan, Plan</h3>

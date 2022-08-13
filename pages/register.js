@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
-import * as fbq from '../lib/fbpixel'
+import * as fbq from "../lib/fbpixel"
 
 export default function Register() {
 
@@ -16,8 +16,8 @@ export default function Register() {
             setIsSubmitting(true)
 
             const requestOptions = {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     "id": "5",
                     "eventId": "I6yE0d6LWutN4FBuMzAb",
@@ -27,9 +27,9 @@ export default function Register() {
                     "notificationEnabled": true
                 })
             };
-            fetch('https://asia-east2-kohbeeweb.cloudfunctions.net/kohbeeController/saveRegistration', requestOptions)
+            fetch("https://asia-east2-kohbeeweb.cloudfunctions.net/kohbeeController/saveRegistration", requestOptions)
                 .then(response => response.json())
-                .then(() => fbq.event('Lead'))
+                .then(() => fbq.event("Lead"))
                 .then(() => {
                     sethasSubmitted(true)
                     setIsSubmitting(false)
@@ -46,7 +46,7 @@ export default function Register() {
             setIsValid(true);
         } else {
             setIsValid(false);
-            setMessage('Please enter a valid email!');
+            setMessage("Please enter a valid email!");
         }
     };
 
