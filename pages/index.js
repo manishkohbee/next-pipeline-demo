@@ -7,7 +7,7 @@ export default function Landing() {
     <>
       <section className="pb-20 text-center">
         <div className=" contaier bg-center py-20 md:py-40 bg-[url('https://www.kohbee.com/wp-content/uploads/2022/05/slide1.jpg')]">
-          <p className="p-4 bg-red-600">
+          <p className="p-4 bg-gray-200">
             <span className="text-3xl lg:text-6xl font-semibold">
               Grow 15X Faster With Kohbee Premium 💎
             </span>
