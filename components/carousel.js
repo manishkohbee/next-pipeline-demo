@@ -23,9 +23,17 @@ export default function Carousel() {
     }
 
     return (
-        <section className="relative py-20">
+        <section className="relative pb-20">
+            <div className="text-3xl lg:text-4xl font-bold text-center pb-10 lg:pb-20">
+                Don&apos;t Believe Us? Hear it from our Creators.....
+            </div>
             <div className="container px-4 mx-auto">
-                <div className="flex items-center justify-around">
+                <div className="md:hidden relative">
+                    {images.map((value, currIndex) => (
+                        <img key={currIndex} className="h-112 w-full object-cover object-top rounded-xl py-4" src={value} alt="" />
+                    ))}
+                </div>
+                <div className="hidden md:flex items-center justify-around">
                     <div className="px-4">
                         <button className="flex-shrink-0 mr-2 hidden md:block w-14 h-14 rounded-full border hover:bg-gray-50" onClick={() => decrementIndex()}>
                             <svg className="mx-auto" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
