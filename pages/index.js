@@ -157,9 +157,8 @@ export default function Landing() {
         </div>
       </section>
 
-      <div className="fixed bottom-0 left-0 bg-overlay w-screen">
+      <div className="fixed bottom-0 left-0 bg-overlay w-screen lg:hidden">
         <div className="flex items-center h-20 justify-between px-4">
-
           <div className="text-white">
             <span className="font-bold text-2xl">FREE</span> <s className="text-lg">र 999</s>
             <CountdownTimer></CountdownTimer>
