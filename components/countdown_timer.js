@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-function CountdownTimer() {
+export default function CountdownTimer() {
 
     const calculateTimeLeft = () => {
-        const difference = +new Date("2022-08-15T00:00:00+05:30") - +new Date();
+        const difference = +new Date("2062-08-15T00:00:00+05:30") - +new Date();
         let timeLeft = {};
 
         if (difference > 0) {
@@ -44,5 +44,3 @@ function CountdownTimer() {
         </div>
     );
 }
-
-export default CountdownTimer;
